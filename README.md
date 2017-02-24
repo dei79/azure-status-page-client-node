@@ -55,6 +55,15 @@ MeterManager.UpdateMeter(webJobMeter, 'Node12237.WebJob.01').then(() => {
 });
 ```
 
+**Step 5: Remove Meters during graceful shutdown**
+If you want to disconnect a component form the meter system structure it's possible to remove the MeterInstances from the client side. 
+
+```js
+MeterManager.RemoveMetersForInstance('Node12237').then(() => {
+   // DONE 
+});
+```
+
 ## Contributing
 
 1. Fork it!

@@ -30,7 +30,12 @@ MeterManager.UpdateMeter(webJobMeter, 'Node12237.WebJob.01').then(() => {
     MeterManager.UpdateMeter(diskSpaceMeter, 'Node12237', 14 * 1024 * 1024 * 1024).then(() => {
 
         console.log("Updated all meters");
-        process.exit(0);
+
+        // Removing all meters
+        return MeterManager.RemoveMetersForInstance('Node12237').then(() => {
+            console.log("Removed meterinstances");
+            process.exit(0);
+        })
     });
 }).catch((e) => {
     console.log(e);

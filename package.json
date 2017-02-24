@@ -1,0 +1,23 @@
+{
+  "name": "azure-status-page-client",
+  "version": "0.0.1",
+  "description": "Client which can be used with the Azure Status Page Site Extension in nodejs based applications",
+  "main": "./index.js",
+  "scripts": {
+    "test": "echo All good"
+  },
+  "files": [
+    "dist",
+    "assets"
+  ],
+  "author": "Dirk Eisenberg",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^2.1.6",
+    "typings": "^2.1.0"
+  },
+  "dependencies": {
+    "azure-table-client": "^0.6.0",
+    "q": "^1.4.1"
+  }
+}

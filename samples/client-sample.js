@@ -9,10 +9,10 @@ let diskSpaceMeter = '4047A057-E2EF-44AC-B0E3-341EAF0ED09D';
 //
 
 // Register a specific meter which expect a heartbeat every 500 seconds, good to observe continous background worker listening on a queue
-MeterManager.RegisterMeter(webJobMeter, 'Spending Data Processing', 'Background Processing', MeterManager.MeterTypes.Heartbeat, 500);
+MeterManager.RegisterMeter(webJobMeter, 'Spending Data Processing', 'Background Processing', MeterManager.MeterTypes.Heartbeat, 241, 500);
 
 // Register a specific meter which expect that the value will not become less then the specific min value, good for observing diskspace or something like that
-MeterManager.RegisterMeter(diskSpaceMeter, 'Free Diskspace for Caching', 'Caching', MeterManager.MeterTypes.MinValue, 10 * 1024 * 1024 * 1024);
+MeterManager.RegisterMeter(diskSpaceMeter, 'Free Diskspace for Caching', 'Caching', MeterManager.MeterTypes.MinValue, 243, 10 * 1024 * 1024 * 1024);
 
 //
 // This section shows how to configure the right storage for the meter manager

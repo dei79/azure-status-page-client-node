@@ -1,6 +1,6 @@
 {
   "name": "azure-status-page-client",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Client which can be used with the Azure Status Page Site Extension in nodejs based applications",
   "main": "./index.js",
   "scripts": {
